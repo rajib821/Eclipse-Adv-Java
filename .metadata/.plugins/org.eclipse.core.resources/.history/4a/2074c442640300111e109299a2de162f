@@ -1,0 +1,56 @@
+package com.order.serviece.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.order.OrderRepository;
+import com.order.entity.OrderEntity;
+import com.order.entity.OrderItemEntity;
+import com.order.request.OrderItemRequest;
+import com.order.request.OrderRequest;
+import com.order.serviece.IOrderServiece;
+
+@Service
+public class OrderServiece implements IOrderServiece {
+	@Autowired
+	OrderRepository orderRepository;
+	@Override
+	public OrderEntity createOrder(OrderRequest orderRequest) {
+		OrderEntity entity = new OrderEntity();
+		entity.setStatus(orderRequest.getStatus());
+		
+		List<OrderItemRequest> item = orderRequest.getItems();
+		List<OrderItemEntity> entityItem = new ArrayList<OrderItemEntity>();
+		
+		for(OrderItemRequest oitm : item) {
+			OrderItemEntity order = new OrderItemEntity();
+			order.setName(oitm.getName());
+			order.setPrice(oitm.getPrice());
+			order.setQty(oitm.getQty());
+			
+			entityItem.add(order);
+		}
+
+		entity.setItems(entityItem);
+		orderRepository.save(entity);
+		return entity;
+		
+	}
+	
+	public List<OrderEntity> fetchOrder(int orderId) {
+		List<OrderEntity> entity = orderRepository.findByOrderId(orderId);
+		
+		return entity;
+	}
+	
+	public int displayAll(int orderId){
+		List<OrderEntity>  order = orderRepository.findAll();
+		
+		return 1;
+		
+	}
+	
+}

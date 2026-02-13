@@ -1,0 +1,21 @@
+package com.order.request;
+
+import java.util.List;
+
+public class OrderRequest {
+	
+	private String status;
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public List<OrderRequest> getItems() {
+		return items;
+	}
+	public void setItems(List<OrderRequest> items) {
+		this.items = items;
+	}
+	private List<OrderRequest> items;
+}

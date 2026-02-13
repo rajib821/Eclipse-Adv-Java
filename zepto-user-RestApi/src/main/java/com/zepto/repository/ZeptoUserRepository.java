@@ -1,0 +1,91 @@
+package com.zepto.repository;
+
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+
+import com.zepto.entity.ProductEntity;
+import com.zepto.entity.ZeptoUserEntity;
+
+@Repository
+public class ZeptoUserRepository {
+
+	@Autowired
+	SessionFactory sessionFactory;
+	
+	public void createUserProfile(ZeptoUserEntity zeptoUserEntity) {
+		Session session = sessionFactory.openSession();
+		Transaction txn = session.beginTransaction();
+		session.save(zeptoUserEntity);
+		txn.commit();
+		session.close();
+		
+	}
+	
+	public ZeptoUserEntity getProfileFromEmail(String _email) {
+		Session session = sessionFactory.openSession();
+		String hql = "from ZeptoUserEntity where email = :email";
+		ZeptoUserEntity entity = session.createQuery(hql, ZeptoUserEntity.class).setParameter("email", _email).uniqueResult();
+		
+		session.close();
+		return entity;
+		
+	}
+	
+	public ZeptoUserEntity loginProfile(String email , String password) {
+	    Session session = sessionFactory.openSession();
+	    String hql = "from ZeptoUserEntity where email = :email and password = :password";
+	    ZeptoUserEntity entity = session.createQuery(hql, ZeptoUserEntity.class)
+	            .setParameter("email", email)
+	            .setParameter("password", password)
+	            .uniqueResult();
+
+	    session.close();
+	    return entity;
+	}
+
+	
+	public void createProduct(ProductEntity productEntity) {
+		Session session = sessionFactory.openSession();
+		Transaction txn = session.beginTransaction();
+		session.save(productEntity);
+		txn.commit();
+		session.close();
+	}
+	
+	/////
+	
+	public void createProd(ZeptoUserEntity zeptoUserEntity) {
+		Session session = ((SessionFactory) sessionFactory.getCurrentSession()).openSession();
+		Transaction txn = session.beginTransaction();
+		session.save(zeptoUserEntity);
+		txn.commit();
+		session.close();
+		
+	}
+	
+	
+	public List<ProductEntity> getProduct(String productName) {
+	    Session session = sessionFactory.openSession();
+
+	    // HQL query with parameter
+	    String hql = "FROM ProductEntity p WHERE p.name LIKE :name";
+	    List<ProductEntity> products = session.createQuery(hql, ProductEntity.class)
+	            .setParameter("name", "%" + productName + "%") // for partial match
+	            .getResultList();
+
+	    session.close();
+	    return products;
+	}
+
+	
+	
+	
+	
+}

@@ -1,0 +1,15 @@
+127.0.0.1 - - [17/Jan/2026:18:30:48 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:18:30:51 +0530] "GET /ecommerce/ HTTP/1.1" 200 123
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:18:30:52 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:18:31:07 +0530] "GET /ecommerce/displayProfile HTTP/1.1" 200 358
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:18:31:16 +0530] "GET /ecommerce/profileCreate?name=Rajib+Jena&email=rajibkumarj44%40gmail.com&mobile=09348418282&create=Submit HTTP/1.1" 200 197
+127.0.0.1 - - [17/Jan/2026:19:17:08 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:19:17:09 +0530] "GET /ecommerce/ HTTP/1.1" 200 123
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:19:17:33 +0530] "GET /ecommerce/displayProfile HTTP/1.1" 200 358
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:19:17:42 +0530] "GET /ecommerce/profileCreate?name=Rajib+Jena&email=rajibkumarj44%40gmail.com&mobile=09348418282&create=Submit HTTP/1.1" 200 209
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:19:17:46 +0530] "GET /ecommerce/getAllUsers HTTP/1.1" 500 4110
+127.0.0.1 - - [17/Jan/2026:20:02:42 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:20:02:42 +0530] "GET /ecommerce/ HTTP/1.1" 200 123
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:20:02:54 +0530] "GET /ecommerce/displayProfile HTTP/1.1" 200 358
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:20:03:02 +0530] "GET /ecommerce/profileCreate?name=Rajib+Jena&email=jjsk0818%40gmail.com&mobile=09348418282&create=Submit HTTP/1.1" 200 209
+0:0:0:0:0:0:0:1 - - [17/Jan/2026:20:03:07 +0530] "GET /ecommerce/getAllUsers HTTP/1.1" 200 1945

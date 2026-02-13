@@ -1,0 +1,23 @@
+package com.order.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.order.entity.OrderEntity;
+import com.order.request.OrderRequest;
+import com.order.serviece.IOrderServiece;
+
+@RestController
+@RequestMapping("/order")
+public class OrderController {
+	@Autowired
+	IOrderServiece iOrderServiece;
+	
+	@PostMapping("/place")
+	public OrderEntity placeOrder(@RequestBody OrderRequest orderRequest) {
+		return iOrderServiece.createOrder(orderRequest);
+	}
+}

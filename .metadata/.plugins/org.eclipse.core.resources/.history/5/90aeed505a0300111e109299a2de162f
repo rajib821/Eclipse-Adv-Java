@@ -1,0 +1,10 @@
+package com.order.serviece;
+
+import org.springframework.stereotype.Service;
+
+import com.order.request.OrderRequest;
+
+@Service
+public interface IOrderServiece {
+	public void createOrder(OrderRequest orderRequest);
+}

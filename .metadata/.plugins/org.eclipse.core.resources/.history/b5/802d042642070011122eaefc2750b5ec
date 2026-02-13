@@ -1,0 +1,13 @@
+package com.user;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class UserSampleEurekaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UserSampleEurekaApplication.class, args);
+	}
+
+}

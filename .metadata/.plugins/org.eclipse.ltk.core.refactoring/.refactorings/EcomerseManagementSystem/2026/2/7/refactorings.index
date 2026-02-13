@@ -1,0 +1,11 @@
+1770638882450	Delete element
+1770642174966	Delete element
+1770648840370	Rename package 'com.ecomerce'
+1770648854092	Rename package 'com.ecomerce.service.impl'
+1770648865598	Rename package 'com.ecomerce.service'
+1770648874569	Rename package 'com.ecomerce.repository'
+1770648888121	Rename package 'com.ecomerce.exception'
+1770648896908	Rename package 'com.ecomerce.entity'
+1770648906154	Rename package 'com.ecomerce.dto.response'
+1770648916521	Rename package 'com.ecomerce.dto.request'
+1770648929409	Rename package 'com.ecomerce.controller'

@@ -1,0 +1,22 @@
+package com.pharma.serviece;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pharma.entity.PharmaUserEntity;
+import com.pharma.repository.PharmaRepository;
+import com.pharma.request.UserRequest;
+
+@Service
+public class PharmaServiece {
+	@Autowired
+	PharmaRepository pharmaRepository;
+	
+	public String createProfile(UserRequest userRequest) {
+		PharmaUserEntity userEntity = new PharmaUserEntity();
+		userEntity.setName(userRequest.getName());
+		userEntity.setEmailId(userRequest.getEmailId());
+		pharmaRepository.createUserProfile(userEntity);
+		return "Creation Sucess!!";
+	}
+}

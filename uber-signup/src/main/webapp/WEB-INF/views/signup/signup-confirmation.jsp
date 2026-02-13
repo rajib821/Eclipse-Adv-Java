@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>confirmation</title>
+</head>
+<body>
+Congratulation you have completed
+
+<a href="signup">Signup</a>
+</body>
+</html>

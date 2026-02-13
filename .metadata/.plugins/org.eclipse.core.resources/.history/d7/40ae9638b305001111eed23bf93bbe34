@@ -1,0 +1,36 @@
+package com.ecomerce.service.impl;
+
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ecomerce.dto.request.UserRequest;
+import com.ecomerce.entity.UserEntity;
+import com.ecomerce.repository.UserRepository;
+import com.ecomerce.service.UserService;
+
+public class UserServiceImpl implements UserService {
+	@Autowired
+	UserRepository userRepository;
+	
+	@Override
+	public String userRegistered(UserRequest userRequest) {
+		String autoPassword = generatePassword();
+		
+		UserEntity user = new UserEntity();
+		user.setName(userRequest.getName());
+		user.setEmail(userRequest.getEmail());
+		user.setPassword(autoPassword);
+		
+		userRepository.save(user);
+		
+		return "Registered successfully & password :- "+autoPassword;
+	}
+	
+	private String generatePassword() {
+		 return UUID.randomUUID()
+                 .toString()
+                 .replace("-", "")
+                 .substring(0, 8);
+	}
+}

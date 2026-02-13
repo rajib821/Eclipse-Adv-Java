@@ -1,0 +1,14 @@
+package com.ecomerce;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class EcommerceExceptionHandler {
+
+	@ExceptionHandler(Exception.class)
+	public ResponseEntity<String> exceptionHandler(Exception e){
+		return ResponseEntity.ok("Unable to proceed, Please check ");
+	}
+}

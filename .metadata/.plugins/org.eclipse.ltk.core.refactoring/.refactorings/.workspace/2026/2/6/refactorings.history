@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JPA-users-pagination&apos; to &apos;JPA-users-pagination-actuator&apos;" description="Rename resource &apos;JPA-users-pagination&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/JPA-users-pagination" name="JPA-users-pagination-actuator" stamp="1770376640977" updateReferences="true"/>
+</session>

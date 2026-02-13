@@ -1,0 +1,34 @@
+package com.pharma.serviece;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pharma.entity.PharmaUserEntity;
+import com.pharma.password.PasswordGen;
+import com.pharma.repository.PharmaRepository;
+import com.pharma.request.UserRequest;
+
+@Service
+public class PharmaServiece {
+	@Autowired
+	PharmaRepository pharmaRepository;
+	
+	public String createProfile(UserRequest userRequest) {
+		PharmaUserEntity userEntity = new PharmaUserEntity();
+		String uniquEmail = userRequest.getEmailId();
+		if(uniquEmail.equals(pharmaRepository.getProfileFromEmail(uniquEmail))) {
+			
+		}
+		
+		userEntity.setName(userRequest.getName());
+		userEntity.setEmailId(userRequest.getEmailId());
+		pharmaRepository.createUserProfile(userEntity);
+		
+		
+		
+		//Password
+		String password = PasswordGen.generatePassword();
+		userEntity.setPassword(password);
+		return password;
+	}
+}

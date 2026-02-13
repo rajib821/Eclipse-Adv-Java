@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.uber.rider&apos; to &apos;com.uber.servieces&apos;&#x0D;&#x0A;- Original project: &apos;Uber-Ride-Booking-System&apos;&#x0D;&#x0A;- Original element: &apos;Uber-Ride-Booking-System/src/main/java/com.uber.rider&apos;&#x0D;&#x0A;- Renamed element: &apos;Uber-Ride-Booking-System/src/main/java/com.uber.servieces&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.uber.rider&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uber.rider" name="com.uber.servieces" qualified="false" references="true" stamp="1769766871460" textual="false" version="1.0"/>
+</session>

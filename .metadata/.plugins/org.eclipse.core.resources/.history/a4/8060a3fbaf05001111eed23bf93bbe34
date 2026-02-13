@@ -1,0 +1,4 @@
+package com.ecomerce.repository;
+public class UserRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.ecomerce.controller;
+
+public class UserController {
+
+}

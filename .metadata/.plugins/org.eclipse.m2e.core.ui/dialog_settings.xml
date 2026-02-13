@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="F:\KODEWALA JAVA COURSE\Eclipse Adv Java\zepto-user-RestApi"/>
+			<item value="F:\KODEWALA JAVA COURSE\Eclipse Adv Java\springBoot-controller"/>
+			<item value="F:\KODEWALA JAVA COURSE\Eclipse Adv Java\blinkit-user-RestAPI"/>
+			<item value="F:\KODEWALA JAVA COURSE\Eclipse Adv Java\flipkart--user-profile"/>
+			<item value="F:\KODEWALA JAVA COURSE\Eclipse Adv Java\ecommerce\src\main\java\com\ecommerce\serviece\ProfileServiece.java"/>
+			<item value="F:\GitClone\18th_August_2025_Offline\amazon-user-profile"/>
+			<item value="F:\KODEWALA JAVA COURSE\Eclipse Adv Java\ola-booking"/>
+			<item value="F:\GitClone\18th_August_2025_Offline\rapido-booking"/>
+			<item value="F:\GitClone\18th_August_2025_Offline\rapido-signup"/>
+			<item value="F:\KODEWALA JAVA COURSE\Eclipse Adv Java\spring-WEB-MVC"/>
+			<item value="F:\KODEWALA JAVA COURSE\Eclipse Adv Java\spring-WEB-MVC\src\main\java\com\kodewala\login\controller\LoginController.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.pharma"/>
+			<item value="com.pharma.pharma_rest"/>
+			<item value="com.zepto.zepto"/>
+			<item value="com.blinkit.blinkit"/>
+			<item value="com.blinkit"/>
+			<item value="com.flipkart"/>
+			<item value="com.kodewala"/>
+			<item value="com.kodewala.zepto"/>
+			<item value="com.kodewala.ola.booking"/>
+			<item value="com.kodewala.uber.uber_signup"/>
+			<item value="com.kodewala.ola_signup"/>
+			<item value="com.kodewala.ola_"/>
+		</list>
+		<list key="groupId">
+			<item value="com.pharma"/>
+			<item value="com.zepto"/>
+			<item value="com.blinkit"/>
+			<item value="com.flipkart"/>
+			<item value="com.kodewala.path.variable"/>
+			<item value="com.kodewala.zepto"/>
+			<item value="com.kodewala.ola"/>
+			<item value="com.kodewala.uber"/>
+			<item value="com.kodewala"/>
+		</list>
+		<list key="artifactId">
+			<item value="pharma-rest"/>
+			<item value="zepto-user-RestApi"/>
+			<item value="blinkit-user-RestAPI"/>
+			<item value="blinkit"/>
+			<item value="flipkart--user-profile"/>
+			<item value="path-variable"/>
+			<item value="zepto-web"/>
+			<item value="ola-booking"/>
+			<item value="uber-signup"/>
+			<item value="ola-signup"/>
+			<item value="ola-"/>
+			<item value="spring-WEB-MVC"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="F:\Prac Java\ecommerce-system\EcomerseManagementSystem"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>
